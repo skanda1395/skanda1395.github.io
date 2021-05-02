@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#github_profile img {
+  width: 75px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: all ease 200ms;
+}
+
+#github_profile img:hover {
+  transform: scale(1.1);
+}
