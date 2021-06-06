@@ -15,7 +15,7 @@
     <main>
       <!-- Intro -->
       <div id="title container">
-        <h3 class="blue-text center-align">Useful Links & Online Resources</h3>
+        <h3 class="red-text text-accent-4 center-align">Useful Links & Online Resources</h3>
         <p class="center-align">
           These are some of the resources I've found online and used (still use)
           since the beginning of my web-dev journey. It has helped me in
@@ -689,10 +689,20 @@
                       <h5>JavaScript</h5>
                       <ul>
                         <li>
+                          <a href="https://eloquentjavascript.net/" target="_blank"
+                            >Eloquent JavaScript <span class="red-text">(Must Read)</span> </a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/getify/You-Dont-Know-JS" target="_blank"
+                            >You Don't Know JavaScript <span class="red-text">(Must Read)</span> </a
+                          >
+                        </li>
+                        <li>
                             <a href="https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke" target="_blank"
                               >JavaScript Visualized: Promises & Async/Await ⭐️🎀</a
                             >
-                          </li>    
+                          </li> 
                           <li>
                               <a href="https://dev.to/nas5w/asynchronous-javascript-how-callbacks-promises-and-async-await-work-1f7p?utm_source=digest_mailer&utm_medium=email&utm_campaign=digest_email" target="_blank"
                                 >Asynchronous JavaScript—How Callbacks, Promises, and Async-Await Work</a
@@ -806,7 +816,7 @@
                             </li>
                       </ul>
                   </div>
-                  <div id="js" class="col s12 m6">
+                  <div id="js_fw" class="col s12 m6">
                     <h5>JavaScript Frameworks</h5>
                     <ul>
                       <li>
@@ -838,7 +848,7 @@
               </div>
           </div>
           <div id="back-end" class="col s12">
-            <ul>
+            <ul id="general">
               <li>
                 <a href="https://www.youtube.com/watch?v=2eebptXfEvw" target="_blank"
                   >PHP For Absolute Beginners
@@ -937,6 +947,12 @@
           <div id="misc" class="col s12">
             <ul>
               <li>
+                <a href="https://www.youtube.com/watch?v=eulnSXkhE7I" target="_blank"
+                  >Git and GitHub - CS50 Beyond 2019 <span class="red-text">(Must Learn)</span>
+                  </a
+                >
+              </li>       
+              <li>
                 <a href="https://blog.maximeheckel.com/posts/guide-to-cicd-for-frontend-developers" target="_blank"
                   >The Little Guide to CI/CD for Frontend Developers
                   </a
@@ -956,7 +972,7 @@
               </li>    
               <li>
                 <a href="https://www.freecodecamp.org/news/brief-history-of-the-internet/" target="_blank"
-                  >A Brief History of the Internet – Who Invented It, How it Works, and How it Became the Web We Use Today
+                  >A Brief History of the Internet
                   </a
                 >
               </li>    
@@ -979,8 +995,14 @@
                 >
               </li>       
               <li>
-                <a href="https://www.youtube.com/watch?v=eulnSXkhE7I" target="_blank"
-                  >Git and GitHub - CS50 Beyond 2019 <span class="red-text">(Must Learn)</span>
+                <a href="https://vim-adventures.com/" target="_blank"
+                  >Learn Vim While Playing a Game
+                  </a
+                >
+              </li>       
+              <li>
+                <a href="https://www.youtube.com/watch?v=IiwGbcd8S7I" target="_blank"
+                  >Vim Tutorial | Ben Awad
                   </a
                 >
               </li>       
@@ -1010,6 +1032,12 @@
                   <li>
                     <a href="https://www.youtube.com/channel/UC_ML5xP23TOWKUcc-oAE_Eg" target="_blank"
                       >Hussein Nasser <span class="red-text">(Must Follow)</span>
+                      </a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UC-8QAzbLcRglXeN_MY9blyw" target="_blank"
+                      >Ben Awad</span>
                       </a
                     >
                   </li>
@@ -1120,7 +1148,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       let tabsEl = document.querySelector(".tabs");
-      let instance = M.Tabs.init(tabsEl);
+      let instance = M.Tabs.init(tabsEl, {
+        // swipeable: true
+      });
     </script>
   </body>
 </html>
