@@ -6,6 +6,7 @@
 
 body {
   background: darkred;
+  position: relative;
 }
 
 #canvas1 {
