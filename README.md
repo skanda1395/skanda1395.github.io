@@ -1,2 +1,2 @@
 # skanda1395.github.io
-My first portfolio site
+My personal site + few useful resources for learning 
