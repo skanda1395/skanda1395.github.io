@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="./style.css">
     <title>Useful Online Resources | Web Dev</title>
@@ -17,7 +19,7 @@
     <main>
       <!-- Intro -->
       <div id="title container">
-        <h3 class="red-text text-accent-4 center-align">Useful Links & Online Resources
+        <h3 class="red-text text-accent-4 center-align">Useful Online Resources
            <span class="blue badge new" data-badge-caption="Last Updated: 28-09-2021"></span>
         </h3>
         <!-- <p class="center-align" id="last_update"></span></p>  -->
@@ -27,8 +29,25 @@
           numerous ways and I hope it helps you as well. 🙂 <br>
         </p>
       </div>
+
+      <!-- Search bar -->
+      <div class="container">
+        <div class="row valign-wrapper">
+          <div class="input-field col s12 m8 offset-m2">
+            <i class="material-icons prefix">search</i>
+            <input id="search_bar" type="text" class="validate">
+            <label for="search_bar">I'm looking for...</label>
+          </div>
+          <div class="col s12 m2">
+            <button class="btn waves-effect waves-light" id="search_btn">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+
       <!-- Links -->
-      <section class="container">
+      <section class="container" id="links_container">
         <div class="row">
           <div class="col s12 sticky">
             <ul class="tabs z-depth-1">
@@ -41,8 +60,8 @@
           <div id="front-end" class="col s12">
               <div class="row">
                 <div id="html_css" class="col s12 m6">
-                  <h5>HTML & CSS</h5>
-                  <ul>    
+                  <ul class="topic_list">    
+                    <h5>HTML & CSS</h5>
                     <li>
                       <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg" target="_blank"
                         >HTML Full Course - Build a Website Tutorial</a
@@ -584,8 +603,8 @@
                   </ul>
                 </div>
                 <div id="js" class="col s12 m6">
-                  <h5>JavaScript</h5>
-                  <ul>
+                  <ul class="topic_list">
+                    <h5>JavaScript</h5>
                     <li>
                       <a href="https://eloquentjavascript.net/" target="_blank"
                         >Eloquent JavaScript <span class="red-text">(Must Read)</span> </a
@@ -750,8 +769,8 @@
                   </ul>
                 </div>
                 <div id="js_fw" class="col s12 m6">
-                  <h5>JavaScript Frameworks</h5>
-                  <ul>
+                  <ul class="topic_list">
+                    <h5>JavaScript Frameworks</h5>
                     <li>
                       <a href="https://www.vuemastery.com/courses/" target="_blank"
                         >Learn Vue.js | Vue Mastery
@@ -784,8 +803,8 @@
                   </ul>
                 </div>  
                 <div id="svg" class="col s12 m6">
-                    <h5>SVG</h5>
-                    <ul>
+                  <ul class="topic_list">
+                      <h5>SVG</h5>
                         <li>
                             <a href="https://css-tricks.com/lodge/svg/" target="_blank"
                               >Everything You Need To Know About SVG</a
@@ -929,8 +948,8 @@
                     </ul>
                 </div>
                 <div id="canvas" class="col s12 m6">
-                  <h5>Canvas</h5>
-                  <ul>
+                  <ul class="topic_list">
+                    <h5>Canvas</h5>
                     <li>
                       <a href="https://www.youtube.com/watch?v=UoTxOVEecbI" target="_blank"
                         >Pixel Effects with JavaScript and HTML Canvas - Tutorial</a
@@ -949,8 +968,8 @@
                   </ul>
                 </div>
                 <div id="design" class="col s12 m6">
-                  <h5>Design</h5>
-                  <ul>
+                  <ul class="topic_list">
+                    <h5>Design</h5>
                     <li>
                       <a href="https://designvalley.club/" target="_blank">
                         DesignValley | Design Tools Depository
@@ -964,7 +983,7 @@
               </div>
           </div>
           <div id="back-end" class="col s12">
-            <ul id="general">
+            <ul id="general" class="topic_list">
               <li>
                 <a href="https://www.youtube.com/watch?v=2eebptXfEvw" target="_blank"
                   >PHP For Absolute Beginners
@@ -991,8 +1010,8 @@
               </li>
             </ul>
             <div id="dbs">
-              <h5>Database</h5>
-              <ul>
+              <ul class="topic_list">
+                <h5>Database</h5>
                 <li>
                   <a href="https://www.freecodecamp.org/news/sql-recipes/" target="_blank"
                     >Learn SQL with These 5 Easy Recipes
@@ -1021,7 +1040,7 @@
             </div>
           </div>
           <div id="cs-concepts" class="col s12">
-            <ul>
+            <ul class="topic_list">
               <li>
                 <a href="https://www.youtube.com/watch?v=RBSGKlAvoiM&list=WL&index=21" target="_blank"
                   >Data Structures Easy to Advanced Course - Full Tutorial from a Google Engineer <span class="red-text">(Must Learn)</span>
@@ -1079,7 +1098,7 @@
             </ul>
           </div>
           <div id="misc" class="col s12">
-            <ul>
+            <ul class="topic_list">
               <li>
                 <a href="https://www.youtube.com/watch?v=eulnSXkhE7I" target="_blank"
                   >Git and GitHub - CS50 Beyond 2019 <span class="red-text">(Must Learn)</span>
@@ -1176,8 +1195,8 @@
             </ul>
             <div class="row">
               <div id="fav_ytc" class="col s12 m6">
-                <h5>YouTube Developer Channels I Follow 📺</h5>
-                <ul>
+                <ul class="topic_list">
+                  <h5>YouTube Developer Channels I Follow 📺</h5>
                   <li>
                     <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank"
                       >The Net Ninja <span class="red-text">(Must Follow)</span>
@@ -1271,8 +1290,8 @@
                 </ul>
               </div>
               <div id="newsletters" class="col s12 m6">
-                <h5>Newsletters I've Subscribed To 📰</h5>
-                <ul>
+                <ul class="topic_list">
+                  <h5>Newsletters I've Subscribed To 📰</h5>
                   <li>
                     <a href="https://viewbox.club/" target="_blank"
                       >viewBox
@@ -1313,11 +1332,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-      let tabsEl = document.querySelector(".tabs");
-      let instance = M.Tabs.init(tabsEl, {
-        // swipeable: true
-      });
-    </script>
+    <!-- Custom Script -->
+    <script src="./links.js"></script>
   </body>
 </html>
