@@ -5,11 +5,16 @@
 
 .badge {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
   float: none !important;
   padding: 5px 6px!important;
   line-height: 13px !important;
   font-size: 0.3em !important;
   font-weight: bolder !important;
+  border-top-right-radius: 0 !important;
+}
+
+#tabs_row {
+  margin-bottom: 0;
 }
