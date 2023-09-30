@@ -11,7 +11,7 @@ let adjustY = 0;
 let mouse = {
   x: null,
   y: null,
-  radius: 100,
+  radius: 55,
 };
 
 window.addEventListener("mousemove", (event) => {
@@ -21,7 +21,7 @@ window.addEventListener("mousemove", (event) => {
 
 ctx.fillStyle = "white";
 ctx.font = "25px Helvetica";
-ctx.fillText("Sunil", 10, 30);
+ctx.fillText("Sunil", 8, 30);
 const textCoordinates = ctx.getImageData(0, 0, 100, 100);
 
 function randomColour() {
